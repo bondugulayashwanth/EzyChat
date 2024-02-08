@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EzyChat</title>
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <main>
+      <div class="tophead">
+        <p>EzyChat</p>
+        <a href="index.html">Leave</a>
+      </div>
+      <div class="bottombody">
+        <div class="user">
+          <h3>Users</h3>
+          <div class="allusers"></div>
+        </div>
+        <div class="outbox">
+          <div class="msgbox"></div>
+          <div class="send">
+            <form action="chat.html" class="msgform">
+              <input type="text" id="inputmsg" placeholder="Enter Your Message"  required/>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.2/qs.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
